@@ -173,3 +173,17 @@ def player_numbers(team_input)
   end
   return number_array
 end
+
+def shoe_size(player_name)
+  game_hash.each do |team, team_data|
+    team_data.each do |attribute, values|
+      if attribute == :players
+        values.each do |player, stats|
+          if player_name==player
+            return stats
+          end
+        end
+      end
+    end
+  end
+end

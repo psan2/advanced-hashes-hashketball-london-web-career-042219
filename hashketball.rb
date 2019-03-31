@@ -166,14 +166,8 @@ def player_numbers(team_input)
   number_array = []
   game_hash.each do |team, team_data|
     if team_data[:team_name] == team_input
-      binding.pry
-      team_data.each do |attribute, values|
+      team_data[:players].each do |player, info|
         binding.pry
-        values.each do |player, stats|
-          binding.pry
-          number_array << stats[:number]
-        end
-      end
     end
   end
   return number_array

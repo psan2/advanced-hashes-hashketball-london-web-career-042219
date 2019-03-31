@@ -162,11 +162,11 @@ def team_names
   return teams
 end
 
-def player_numbers(team)
+def player_numbers(team_input)
   number_array = []
   game_hash.each do |team, team_data|
     binding.pry
-    if team_data[:team_name] == team
+    if team_data[:team_name] == team_input
       binding.pry
       team_data.each do |attribute, values|
         binding.pry

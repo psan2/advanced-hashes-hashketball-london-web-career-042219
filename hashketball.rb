@@ -124,7 +124,6 @@ def num_points_scored(name)
       if attribute == :players
         values.each do |player, stats|
           if name == player
-            binding.pry
             stats[:points]
           end
         end

@@ -199,7 +199,6 @@ def big_shoe_rebounds
             big_shoe[:size] = stats[:shoe]
             big_shoe[:name] = player
           end
-          binding.pry
         end
       end
     end

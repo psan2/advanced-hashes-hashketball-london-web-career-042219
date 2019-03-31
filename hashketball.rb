@@ -168,6 +168,7 @@ def player_numbers(team)
     if team_data[:team_name] == team
       binding.pry
       team_data.each do |attribute, values|
+        binding.pry
         values.each do |player, stats|
           number_array << stats[:number]
         end

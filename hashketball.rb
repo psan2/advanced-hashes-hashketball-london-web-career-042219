@@ -165,6 +165,7 @@ end
 def player_numbers(team)
   number_array = []
   game_hash.each do |team, team_data|
+    binding.pry
     if team_data[:team_name] == team
       binding.pry
       team_data.each do |attribute, values|

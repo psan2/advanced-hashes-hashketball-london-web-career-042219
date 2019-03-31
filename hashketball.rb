@@ -168,6 +168,7 @@ def player_numbers(team_input)
     if team_data[:team_name] == team_input
       team_data[:players].each do |player, info|
         binding.pry
+      end
     end
   end
   return number_array

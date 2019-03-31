@@ -180,6 +180,7 @@ def player_stats(player_name)
       if attribute == :players
         values.each do |player, stats|
           if player_name==player
+            stats[:number].map! {|number| number.to_i}
             return stats
           end
         end

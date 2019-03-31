@@ -130,6 +130,7 @@ def num_points_scored(name)
       end
     end
   end
+  points
 end
 
 num_points_scored("Brendan Haywood")

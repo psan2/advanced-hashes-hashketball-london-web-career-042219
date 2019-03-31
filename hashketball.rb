@@ -158,6 +158,6 @@ def team_names
   teams = []
   game_hash.each do |team, team_data|
     teams << team_data[:team_name]
-    return teams
   end
+  return teams
 end

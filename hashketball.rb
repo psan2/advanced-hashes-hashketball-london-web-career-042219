@@ -170,6 +170,7 @@ def player_numbers(team)
       team_data.each do |attribute, values|
         binding.pry
         values.each do |player, stats|
+          binding.pry
           number_array << stats[:number]
         end
       end

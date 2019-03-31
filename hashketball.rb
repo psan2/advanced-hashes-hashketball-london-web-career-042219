@@ -121,6 +121,5 @@ end
 def num_points_scored(name)
   game_hash.each do |team, team_data|
     binding.pry
-    team[:players][name][:points]
   end
 end

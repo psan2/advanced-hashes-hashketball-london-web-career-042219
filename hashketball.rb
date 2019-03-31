@@ -161,3 +161,16 @@ def team_names
   end
   return teams
 end
+
+def player_numbers(team)
+  number_array = []
+  game_hash.each do |team, team_data|
+    if team_data[:team_name] == name
+      team_data.each do |attribute, values|
+        values.each do |player, stats|
+          number_array << stats[:number]
+        end
+      end
+    end
+  end
+end

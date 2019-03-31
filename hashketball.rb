@@ -150,7 +150,7 @@ def team_colors(team_name)
   game_hash.each do |team, team_data|
     team_data.each do |attribute, values|
       if attribute = :team_colors
-        return values[:team_colors].to_s
+        return values[:team_colors].values
       end
     end
   end

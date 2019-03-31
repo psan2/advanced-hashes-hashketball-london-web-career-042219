@@ -152,6 +152,7 @@ def team_colors(team_name)
       if attribute = :team_colors
         binding.pry
         return values[:team_colors]
+      end
     end
   end
 end
